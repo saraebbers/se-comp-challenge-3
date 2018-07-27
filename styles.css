@@ -1,9 +1,94 @@
 /*Universal Styles*/
 
 * {
+  box-sizing: border-box;
   font-family: 'Cabin Condensed', sans-serif;
+  margin: 0;
 }
 
+a:link {
+  color: white;
+  text-decoration: none;
+}
+/****check link color****/
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+
+.wrapper {
+
+}
+
+i {
+  margin: 0 8px 0 8px;
+}
+
+ul {
+  list-style-type: none;
+
+}
+
+/*<!-- ***Navigation Section-- left page column*** -->*/
+nav {
+  color: white;
+  background-color: pink;
+}
+
+.nav-title {
+  font-weigt: bold;
+}
+
+.nav-li {
+
+}
+
+.nav-li:hover {
+  color: red;
+}
+
+.yl-chbox {
+  color: yellow;
+}
+
+.bl-chbox {
+  color: blue;
+}
+
+.rd-chbox {
+  color: red;
+}
+
+.gr-chbox {
+  color: green;
+}
+
+/*<!-- ***Search Section-- top page area*** -->*/
+
+
+
+/*<!-- ***Representative Section-- 2nd top page area*** -->*/
+
+
+/*<!-- ***Drop Down Menu Section -- 3rd top page area*** -->*/
+
+
+
+/*<!-- ***Graphics Section -- Middle Page Area*** -->*/
+
+
+
+/*<!-- ***Showcase Section -- Bottom Page Area*** -->*/
 
 
 /*Media Styles*/
