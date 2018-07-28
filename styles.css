@@ -6,13 +6,8 @@
   margin: 0;
 }
 
-a:link {
+a {
   color: white;
-  text-decoration: none;
-}
-/****check link color****/
-
-a:visited {
   text-decoration: none;
 }
 
@@ -20,11 +15,6 @@ a:hover {
   color: red;
   text-decoration: underline;
 }
-
-a:active {
-  text-decoration: underline;
-}
-
 
 .wrapper {
 
