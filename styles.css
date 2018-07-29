@@ -6,13 +6,20 @@
   margin: 0;
 }
 
+:root {
+  --nav: blue;
+  --main: lightblue;
+  --altmain: white;
+}
+
 a {
-  color: white;
+  color: gray;
   text-decoration: none;
 }
 
 a:hover {
-  color: red;
+  color: white;
+  font-weight: bold;
   text-decoration: underline;
 }
 
@@ -71,7 +78,15 @@ nav {
 
 
 /*<!-- ***Drop Down Menu Section -- 3rd top page area*** -->*/
-
+.drop-down-li {
+  color: gray;
+}
+.drop-down-li:hover {
+  color: darkgray;
+  font-weight: bold;
+   text-decoration: underline;
+   text-decoration-color: teal;
+}
 
 
 /*<!-- ***Graphics Section -- Middle Page Area*** -->*/
