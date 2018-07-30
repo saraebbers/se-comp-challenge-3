@@ -7,16 +7,16 @@
 }
 
 :root {
-  --nav: rgb(55 64 80);
-  --main: rgb(255 255 255);
-  --alt-main: rgb(238 242 246);
   --accent-blue: rgb(66 154 232);
-  --accent-teal: rgb(102 184 191);
   --accent-purple: rgb(168 105 173);
-  --nav-txt: rgb(206 212 223);
-  --nav-txt-hv: rgb(250 252 252);
+  --accent-teal: rgb(102 184 191);
+  --alt-main: rgb(238 242 246);
   --body-txt-dark: rgb(106 105 110);
   --body-txt-light: rgb(200 203 206);
+  --main: rgb(255 255 255);
+  --nav: rgb(55 64 80);
+  --nav-txt: rgb(206 212 223);
+  --nav-txt-hv: rgb(250 252 252);
 }
 
 a {
@@ -53,8 +53,8 @@ button {
 
 /*<!-- ***Navigation Section-- left page column*** -->*/
 nav {
-  color: var(--nav-txt);
   background-color: var(--nav);
+  color: var(--nav-txt);
 }
 
 .user {
@@ -120,10 +120,10 @@ nav {
 .drop-down-li:hover {
   color: var(--body-txt-dark);
   font-weight: bold;
+  padding: 10px 10px;
   text-decoration: underline;
   text-decoration-color: var(--accent-blue);
   text-decoration: 
-  padding: 10px 10px;
 }
 
 
@@ -136,21 +136,22 @@ nav {
   background-color: var(--main);
 }
 
-.flex-wrapper {
+.circle-stats {
+  background-color: var(--altmain);
   display: flex;
   flex-flow: row nowrap;
 }
 
 .single-chart {
-  width: 50%;
   justify-content: space-around;
+  width: 50%;
 }
 
 .circular-chart {
   display: block;
   margin: 10px auto;
-  max-width: 80%;
   max-height: 150px;
+  max-width: 80%;
 }
 
 .circle-bg {
@@ -160,15 +161,15 @@ nav {
 }
 
 .circle {
+  animation: progress 1s ease-out forwards;
   fill: none;
   stroke-width: 2.8;
   stroke-linecap: round;
-  animation: progress 1s ease-out forwards;
 }
 
 @keyframes progress {
   0% {
-    stroke-dasharray: 0 4000;
+    stroke-dasharray: 0 100;
   }
 }
 
