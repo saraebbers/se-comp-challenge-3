@@ -6,28 +6,33 @@
   margin: 0;
 }
 
-a:link {
-  color: white;
-  text-decoration: none;
+:root {
+  --nav: rgb(55 64 80);
+  --main: rgb(255 255 255);
+  --alt-main: rgb(238 242 246);
+  --accent-blue: rgb(66 154 232);
+  --accent-teal: rgb(102 184 191);
+  --accent-purple: rgb(168 105 173);
+  --nav-txt: rgb(206 212 223);
+  --nav-txt-hv: rgb(250 252 252);
+  --body-txt-dark: rgb(106 105 110);
+  --body-txt-light: rgb(200 203 206);
 }
-/****check link color****/
 
-a:visited {
+a {
+  color: var(--nav-txt);
   text-decoration: none;
 }
 
 a:hover {
-  color: red;
+  color: var(--nav-txt-hv);
+  font-weight: bold;
   text-decoration: underline;
 }
-
-a:active {
-  text-decoration: underline;
-}
-
 
 .wrapper {
-
+  background-color: var(--main);
+  color: var(--body-txt-dark);
 }
 
 i {
@@ -36,13 +41,24 @@ i {
 
 ul {
   list-style-type: none;
+}
 
+.rounded-img {
+  border-radius: 50%
+}
+
+button {
+  color: var(--body-txt-dark);
 }
 
 /*<!-- ***Navigation Section-- left page column*** -->*/
 nav {
-  color: white;
-  background-color: pink;
+  color: var(--nav-txt);
+  background-color: var(--nav);
+}
+
+.user {
+  width: 3rem;
 }
 
 .nav-title {
@@ -54,7 +70,7 @@ nav {
 }
 
 .nav-li:hover {
-  color: red;
+  color: var(--nav-txt-hv);
 }
 
 .yl-chbox {
@@ -74,21 +90,128 @@ nav {
 }
 
 /*<!-- ***Search Section-- top page area*** -->*/
+.fa-caret-left {
+  background-color: var(accent-blue);
+}
 
+.search-icons {
+  background-color: var(--main);
+}
+
+.search-icons:hover {
+  background-color: var(--accent-blue);
+}
 
 
 /*<!-- ***Representative Section-- 2nd top page area*** -->*/
+.preview {
+  color: var(--accent-blue);
+}
 
+.green-circle {
+  color: green;
+}
 
 /*<!-- ***Drop Down Menu Section -- 3rd top page area*** -->*/
+.drop-down-li {
+  color: var(--body-txt-light);
+}
 
+.drop-down-li:hover {
+  color: var(--body-txt-dark);
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: var(--accent-blue);
+  text-decoration: 
+  padding: 10px 10px;
+}
 
 
 /*<!-- ***Graphics Section -- Middle Page Area*** -->*/
+.graphics-area {
+  background-color: var(--altmain);
+}
 
+.graphics-btn {
+  background-color: var(--main);
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.single-chart {
+  width: 50%;
+  justify-content: space-around;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 150px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 4000;
+  }
+}
+
+.circular-chart.teal .circle {
+  stroke: var(--accent-teal);
+}
+
+.circular-chart.blue .circle {
+  stroke: var(--accent-blue);
+}
+
+.circular-chart.purple .circle {
+  stroke: var(--accent-purple);
+}
+
+.circle-txt {
+  color: var(--body-txt-dark);
+  fill: var(--alt-main);
+  font-size: 0.25rem;
+  text-anchor: middle;
+}
 
 
 /*<!-- ***Job Showcase Section -- Bottom Page Area*** -->*/
+.job-container {
+  background-color: var(--altmain);
+  color: ;
+}
 
+.job-desc {
+  background-color: var(--main);
+}
+
+.gray-bar {
+  background-color: rgb(113 126 147);
+}
+
+.copy {
+  background-color: var(--accent-teal);
+}
+
+.hiring-lead {
+  width: 2rem;
+}
 
 /*Media Styles*/

@@ -11,9 +11,8 @@
     <div class="wrapper">
 <!-- ***Navigation Section-- left page column*** -->
       <nav class="nav-title user-info">
-        <img src="images/my picture.jpg" alt="Image of Sara Ebbers">
+        <img class="rounded-img user" src="images/my picture.jpg" alt="Image of Sara Ebbers">
         <p>Sara Ebbers<span><i class="fas fa-caret-down"></i><span></p>
-       
       </nav>
       <nav class="main-nav">
         <ul>
@@ -89,31 +88,128 @@
       </nav>
 
 <!-- ***Search Section-- top page area*** -->
-
+    <section class="search-area">
+      <p>
+        <i class="fas fa-caret-left"></i>
+        <span><i class="fas fa-bars"></i></span>
+      </p>
+      <input class="search-bar" type="search" placeholder="<i class="fas fa-search"></i>Search for a job, task, or resume"</input>
+      <!-- ****put an icon inside input field**** -->
+      <p class="search-icons"><i class="fas fa-user-astronaut"></i></p>
+      <p class="search-icons"><i class="fas fa-band-aid"></i></p>
+      <p class="search-icons"><i class="fas fa-th"></i></p>
+    </section>
 
 
 <!-- ***Representative Section-- 2nd top page area*** -->
-
+    <section class="representative-area">
+      <h2>Customer Service Representative</h2>
+      <i class="fas fa-map-marker-alt"></i>
+      <span><p>San Francisco, CA</p><i class="fas fa-circle"></i><p class="preview">Preview this post</p></span>
+      <div>
+        <button class="rounded-edge-oblong"><i class="fas fa-circle green-circle">OPEN</i></button>
+        <button class="rounded-edge-circle"><i class="far fa-ribbon"></i></button>
+        <button class="rounded-edge-circle"><i class="fas fa-pencil-alt">
+            </i></button>
+        <button class="rounded-edge-circle"><i class="fas fa-clipboard-list"></i></button>
+      </div>
 
 
 <!-- ***Drop Down Menu Section -- 3rd top page area*** -->
-
-
+      <section class="drop-down-menu">
+        <ul class="drop-down-ul">
+          <li class="drop-down-li">SUMMARY
+          </li>
+          <li class="drop-down-li">APPLICANTS
+          </li>
+          <li class="drop-down-li">JOB BOARD
+          </li>
+          <li class="drop-down-li">INTERVIEWS
+          </li>
+          <li class="drop-down-li">ACTIVITY
+          </li>
+          <li class="drop-down-li">BROADCAST
+          </li>
+          <li class="drop-down-li">NOTIFICATIONS
+          </li>
+        </ul>
+      </section>
 
 <!-- ***Graphics Section -- Middle Page Area*** -->
-
+    <section class="graphics-area">
+      <div class="circle-stat-area">
+        <div class="circle-stats">
+          <div class="flex-wrapper">
+            <div class="single-chart">
+              <svg viewbox="0 0 36 36" class="circular-chart teal">
+                <path class="circle-bg"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <path class="circle"
+                  stroke-dasharray="3154, 4000"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <text x="18" y="20.35" class="circle-txt">3,154 APPLICANTS</text>
+              </svg>
+            </div>
+            
+            <div class="single-chart">
+              <svg viewbox="0 0 36 36" class="circular-chart blue">
+                <path class="circle-bg"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <path class="circle"
+                  stroke-dasharray="1546, 4000"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <text x="18" y="20.35" class="circle-txt">1,546 INTERVIEWS</text>
+              </svg>
+            </div>
+            <div class="single-chart">
+              <svg viewbox="0 0 36 36" class="circular-chart purple">
+                <path class="circle-bg"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <path class="circle"
+                  stroke-dasharray="912, 4000"
+                  d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <text x="18" y="20.35" class="circle-txt">FORWARDS</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <button class="graphics-btn rounded-edge-oblong">`TOTALS OUT OF ${VALUE} VIEWS`</button>
+      </div>
+      <div class="bar-graph-stats">
+         <img src="images/WeeklyChart.png" alt="bar-graph-stats">
+         <button class="graphics-btn rounded-edge-oblong">APPLICANTS/DAY</button>
+      </div>
 
 
 <!-- ***Job Showcase Section -- Bottom Page Area*** -->
       <section class="job-container">
         <article class="job-desc">
-          <p>JOB DESCRIPTION
-          </p>
-          <button>
-            <i class="fas fa-pencil-alt">
-            </i>
-            <span>EDIT</span>
-          </button>
+          <div class="gray-bar">
+            <p>JOB DESCRIPTION
+            </p>
+            <button>
+             <i class="fas fa-pencil-alt">
+             </i><span>EDIT</span>
+            </button>
+          </div>
           <p>POSITION TITLE</p>
           <p>Customer Service Representative</p>
           <hr>
@@ -133,7 +229,7 @@
           <p>The Customer Service Representative is responsible for interacting with and providing quality assistance to all of our "special" customers.  This superhero is responsible for keeping up-to-date on the various product shizzle; helping the justice league reduce wait times while maintaining a hidden secret identity.  At times this position may require wonder-twin like powers.</p>
           <hr>
           <p>HIRING LEAD</p>
-          <img src="images/WallyGunter.jpg" alt="Image of Wallace Gunter">
+          <img class="rounded-img hiring-lead" src="images/WallyGunter.jpg" alt="Image of Wallace Gunter">
           <span><p>Wallace Gunter</p></span>
           <hr>
           <p>APPROVED SALARY</p>
