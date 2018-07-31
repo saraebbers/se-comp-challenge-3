@@ -3,4 +3,4 @@
 
 Assignment specs can be found [here](http://frontend.turing.io/projects/m1-static-comp-3.html).
 
-![Alt text](images/Static Comp 3 SE.png "Screenshot")
+![Alt text](images/seStaticComp3.png "Screenshot")
