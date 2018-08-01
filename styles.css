@@ -644,6 +644,7 @@ textarea {
     font-size: 0.75rem;
   }
 
+}
 
 @media(min-width: 630px) and (max-width: 850px) {
   
@@ -664,3 +665,7 @@ textarea {
   }
 
 }
+
+@media(min-width: 400px) and (max-width: 630px) {
+
+  }
