@@ -655,6 +655,7 @@ textarea {
 
   .job-container {
     grid-template-columns: 1fr;
+    grid-template-rows: 2fr .5fr 1fr;
   }
 
   .graphics-area {
@@ -662,24 +663,22 @@ textarea {
   }
 
   .drop-down-menu {
-  font-size: .3rem;
-  padding: 2px;
-  }
-
-  .job-container {
-    grid-column: 1fr;
+    font-size: .3rem;
+    padding: 2px;
   }
 
   .job-desc {
-    grid-column: 1fr;
+    grid-column: 1;
     grid-row: 1;
   }
 
   .social-media {
+    grid-column: 1;
     grid-row: 2;
   }
 
   .alt-job-connections {
+    grid-column: 1;
     grid-row: 3;
   }
 
