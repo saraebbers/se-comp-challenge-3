@@ -12,78 +12,79 @@
     <div class="wrapper">
 <!-- ***Navigation Section-- left page column*** -->
       <section class="navigation">
-        <nav class="nav-title user-info">
-          <img class="rounded-img user" src="images/my picture.jpg" alt="Image of Sara Ebbers">
-          <p>Sara Ebbers<span><i class="fas fa-caret-down"></i></span></p>
+        <nav class="user-info">
+          <img class="rounded-img user nav-block" src="images/myPicture.png" alt="Image of Sara Ebbers">
+          <div class="user-txt">
+            <p class="nav-block">Sara Ebbers</p>
+            <i class="fas fa-caret-down nav-block"></i>
+          </div>
         </nav>
-        <nav class="main-nav">
-          <ul>
-            <li class="title-nav">Main
+        <nav class="nav-title main-nav">
+          <ul class="nav-ul">
+            <li class="title-nav nav-block">Main
             </li>
             <li class="nav-li">
-              <i class="fas fa-home"></i>
-              <a href="#">HOME</a>
+              <i class="fas fa-home nav-block"></i>
+              <a class="nav-block" href="#">HOME</a>
             </li>
             <li class="nav-li">
-              <i class="fas fa-briefcase"></i>
-              <a href="#">JOBS</a>
+              <i class="fas fa-briefcase nav-block"></i>
+              <a class="nav-block" href="#">JOBS</a>
             </li>
             <li class="nav-li">
-              <i class="fas fa-file"></i>
-              <a href="#">RESUMES</a>
+              <i class="fas fa-file nav-block"></i>
+              <a class="nav-block" href="#">RESUMES</a>
             </li>
             <li class="nav-li">
-              <i class="fas fa-tasks"></i>
-              <a href="#">TASKS</a></li>
+              <i class="fas fa-tasks nav-block"></i>
+              <a class="nav-block" href="#">TASKS</a></li>
             <li class="nav-li">
-              <i class="fas fa-calendar-alt"></i>
-              <a href="#">CALENDAR</a>
+              <i class="fas fa-calendar-alt nav-block"></i>
+              <a class="nav-block" href="#">CALENDAR</a>
             </li>
           </ul>
         </nav>
-
-        <nav class="admin-nav">
-          <ul>
-            <li class="title-nav">Admin
+        <nav class="nav-title admin-nav">
+          <ul class="nav-ul">
+            <li class="title-nav nav-block">Admin
             </li>
-            <li class="nav-li">
+            <li class="nav-li nav-block">
               <i class="fas fa-user-friends"></i>
               <a href="#">USERS</a>
             </li>
-            <li class="nav-li">
+            <li class="nav-li nav-block">
               <i class="fas fa-map-marker-alt"></i>
               <a href="#">LOCATIONS</a>
             </li>
-            <li class="nav-li">
+            <li class="nav-li nav-block">
               <i class="fas fa-sitemap"></i>
               <a href="#">WORKFLOWS</a>
             </li>
-            <li class="nav-li">
+            <li class="nav-li nav-block">
               <i class="fas fa-chalkboard-teacher"></i>
               <a href="#">JOBBOARDS</a>
             </li>
-            <li class="nav-li">
+            <li class="nav-li nav-block">
               <i class="fas fa-share-alt"></i>
               <a href="#">SOCIAL</a></li>
           </ul>
         </nav>
-
         <nav class="nav-title categories-nav">
-          <ul>
-            <li class="title-nav">Categories
+          <ul class="nav-ul">
+            <li class="title-nav nav-block">Categories
             </li>
-            <li class="nav-li">
+            <li class="nav-li nav-block">
               <i class="fas fa-check-square yl-chbox"></i>
               <a href="#">Administrative</a></li>
-            <li class="nav-li">
+            <li class="nav-li nav-block">
               <i class="fas fa-check-square bl-chbox"></i>
               <a href="#">Design</a>
             </li>
-            <li class="nav-li">
+            <li class="nav-li nav-block">
               <i class="fas fa-check-square rd-chbox"></i>
               <a href="#">Executive</a>
             </li>
-            <li class="nav-li">
+            <li class="nav-li nav-block">
               <i class="fas fa-check-square gr-chbox"></i>
               <a href="#">Human Resources</a></li>
           </ul>
@@ -92,15 +93,16 @@
 
 <!-- ***Search Section-- top page area*** -->
     <section class="search-area">
-      <p class="search-icons open-nav-section">
+      <p class="open-nav-section">
         <i class="fas fa-caret-left"></i>
         <i class="fas fa-bars"></i>
       </p>
-      <input class="search-bar" type="search" placeholder="Search for a job, task, or resume"</input>
-      <!-- <i class="fas fa-search"></i> -->
-      <!-- ****put an icon inside input field**** -->
+      <div class="search-bar">
+        <i class="fas fa-search"></i>
+        <p class="search-txt">Search for a job, task, or resume</p>
+      </div>
       <p class="search-icons"><i class="fas fa-user-astronaut"></i></p>
-      <p class="search-icons"><i class="fas fa-band-aid"></i></p>
+      <p class="search-icons"><i class="fas fa-calendar-alt"></i></p>
       <p class="search-icons"><i class="fas fa-th"></i></p>
     </section>
 
@@ -110,9 +112,8 @@
       <h2>Customer Service Representative</h2>
       <div class="location-container">
         <i class="fas fa-map-marker-alt"></i>
-        <p>San Francisco, CA</p>
-        <i class="fas fa-circle"></i>
-        <p class="preview">Preview this post</p>
+        <p>San Francisco, CA &nbsp &nbsp• &nbsp </p>
+        <p class="preview"> &nbsp Preview this post</p>
       </div>
       <div class="representative-buttons">
         <button class="rounded-edge-oblong"><i class="fas fa-circle green-circle">OPEN</i></button>
@@ -149,7 +150,7 @@
       <section class="circle-stat-area">
         <div class="circle-stats">
             <div class="single-chart">
-              <svg viewbox="0 0 36 36" class="circular-chart teal">
+              <svg  version="1.1" baseProfile="full" width="1000" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 36 36" class="circular-chart teal">
                 <path class="circle-bg"
                   d="M18 2.0845
                     a 15.9155 15.9155 0 0 1 0 31.831
@@ -166,7 +167,7 @@
             </div>
             
             <div class="single-chart">
-              <svg viewbox="0 0 36 36" class="circular-chart blue">
+              <svg  version="1.1" baseProfile="full" width="1000" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 36 36" class="circular-chart blue">
                 <path class="circle-bg"
                   d="M18 2.0845
                     a 15.9155 15.9155 0 0 1 0 31.831
@@ -182,7 +183,7 @@
               </svg>
             </div>
             <div class="single-chart">
-              <svg viewbox="0 0 36 36" class="circular-chart purple">
+              <svg  version="1.1" baseProfile="full" width="1000" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 36 36" class="circular-chart purple">
                 <path class="circle-bg"
                   d="M18 2.0845
                     a 15.9155 15.9155 0 0 1 0 31.831
@@ -198,7 +199,7 @@
               </svg>
             </div>
         </div>
-        <button class="circles-btn graphics-btn rounded-edge-oblong">TOTALS OUT OF 5231 VIEWS</button>
+        <button class="circles-btn graphics-btn rounded-edge-oblong">TOTALS &nbsp • &nbsp OUT OF 5231 VIEWS</button>
       </section>
       <section class="bar-graph-stats">
          <img class="bar-graph-img" src="images/WeeklyChart.png" alt="bar-graph-stats">
@@ -244,17 +245,17 @@
           <p>$58,000</p>
         </article>
         <div class="social-media">
-          <button>
+          <button class="facebook soc-med">
             <i class="fab fa-facebook-f soc-med-icon"></i>
-            <span><p>Post to Facebook</p></span>
+            <p>Post to Facebook</p>
           </button>
-          <button>
+          <button class="twitter soc-med">
             <i class="fab fa-twitter soc-med-icon"></i>
-            <span><p>Tweet this Job</p></span>
+            <p>Tweet this Job</p>
           </button>
-          <button>
-            <i class="fab fa-linkedin"></i>
-            <span><p>Post to Linkedin</p></span>
+          <button class="linkedin soc-med">
+            <i class="fab fa-linkedin soc-med-icon"></i>
+            <p>Post to Linkedin</p>
           </button>
         </div>
         <div class="alt-job-connections">
