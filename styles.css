@@ -661,7 +661,7 @@ textarea {
 
 /*Media Styles*/
 
-@media screen and (min-width: 1200) { 
+@media screen and (min-width: 1200px) { 
   .wrapper {
     grid-template-columns: 220px auto;
   }
@@ -716,6 +716,7 @@ textarea {
     grid-row: 2;
     display: grid;
     grid-template-rows: auto auto 3rem;
+    grid-template-columns: 1fr;
   }
 
   h2 {
@@ -733,8 +734,6 @@ textarea {
   .drop-down-menu {
     grid-column: 2;
     grid-row: 3;
-    font-size: 0.9rem;
-    padding: 2px;
   }
 
   .graphics-area {
@@ -795,6 +794,8 @@ textarea {
   .representative-area {
     grid-row: 2;
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3rem auto auto;
   }
 
   h2 {
@@ -812,7 +813,6 @@ textarea {
    .drop-down-menu {
     grid-row: 3;
     font-size: 0.7rem;
-    padding: 2px;
   }
 
   .graphics-area {
@@ -848,7 +848,7 @@ textarea {
 
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 619px) {
   
   .wrapper {
     grid-template-columns: 1;
@@ -857,7 +857,7 @@ textarea {
   }
 
   .navigation { 
-    visibility: hidden;
+    visibility: collapse;
   }
 
   .search-area {
@@ -879,6 +879,8 @@ textarea {
   .representative-area {
     grid-row: 2;
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3rem auto auto;
   }
 
   h2 {
