@@ -280,10 +280,6 @@ ul {
   color: green;
 }
 
-.small-screen-drop-down {
-  visibility: collapse;
-}
-
 h2 {
   grid-column: 1;
   grid-row: 1;
@@ -362,6 +358,14 @@ h2 {
   display: flex;
   margin: 0;
   padding: 0;
+}
+
+.small-screen-drop-down {
+  visibility: collapse;
+}
+
+.open-dropdown-section {
+  visibility: collapse;
 }
 
 /*<!-- ***Graphics Section -- Middle Page Area*** -->*/
@@ -703,7 +707,7 @@ textarea {
     grid-column: 1;
     grid-row: 1/6; 
     display: grid;
-    grid-template-rows: 4rem auto auto auto 500px;
+    grid-template-rows: 4rem auto auto auto 800px;
   }
 
   .search-area {
@@ -712,28 +716,37 @@ textarea {
   }
 
   .representative-area {
-    grid-column: 2;
     grid-row: 2;
+    grid-column: 2;
     display: grid;
-    grid-template-rows: auto auto 3rem;
     grid-template-columns: 1fr;
+    grid-template-rows: 3rem auto auto;
+    padding: 20px;
   }
 
   h2 {
     grid-row: 1;
+    grid-column: 1;
   }
 
   .location-container {
     grid-row: 2;
+    grid-column: 1;
   }
 
   .representative-buttons {
     grid-row: 3;
+    grid-column: 1;
+    justify-self: start;
+    margin: 0;
   }
 
   .drop-down-menu {
     grid-column: 2;
     grid-row: 3;
+    padding: 10px, 20px;
+    margin: 0;
+    font-size: 0.5rem;
   }
 
   .graphics-area {
@@ -758,6 +771,8 @@ textarea {
     grid-column: 1;
     grid-row: 2;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .alt-job-connections {
@@ -770,7 +785,7 @@ textarea {
 @media screen and (max-width: 819px) and (min-width: 620px) {
 
   .wrapper {
-    grid-template-columns: 1fr;
+    grid-template-columns: 100px auto;
     display: grid;
     grid-template-rows: 4rem auto auto auto auto;
   }
@@ -780,48 +795,51 @@ textarea {
   }
 
   .search-area {
+    grid-column: 2;
     grid-row: 1;
-  }
-
-  .search-bar {
-    font-size: 0.5rem;
-  }
-
-  .open-nav-section {
-    background-color: var(--nav);
   }
 
   .representative-area {
     grid-row: 2;
+    grid-column: 2;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3rem auto auto;
+    padding: 20px;
   }
 
   h2 {
     grid-row: 1;
+    grid-column: 1;
   }
 
   .location-container {
     grid-row: 2;
+    grid-column: 1;
   }
 
   .representative-buttons {
     grid-row: 3;
+    grid-column: 1;
+    justify-self: start;
+    margin: 0;
   }
 
-   .drop-down-menu {
+  .drop-down-menu {
     grid-row: 3;
+    grid-column: 1;
     font-size: 0.7rem;
   }
 
   .graphics-area {
     grid-row: 4;
+    grid-column: 1;
     grid-template-columns: 1fr;
   }
 
   .job-container {
     grid-row: 5;
+    grid-column: 1;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
   }
@@ -851,65 +869,70 @@ textarea {
 @media screen and (max-width: 619px) {
   
   .wrapper {
-    grid-template-columns: 1;
+    grid-template-columns: 1fr;
     display: grid;
     grid-template-rows: 4rem auto auto auto auto;
   }
 
   .navigation { 
+    grid-column: 1;
     visibility: collapse;
   }
 
   .search-area {
+    grid-column: 1;
     grid-row: 1;
-  }
-
-  .search-bar {
-    font-size: 0.5rem;
-  }
-
-  .search-icons {
-    visibility: collapse;
-  }
-
-  .open-nav-section {
-    background-color: var(--nav);
   }
 
   .representative-area {
     grid-row: 2;
+    grid-column: 1;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3rem auto auto;
+    padding: 20px;
   }
 
   h2 {
     grid-row: 1;
+    grid-column: 1;
   }
 
   .location-container {
     grid-row: 2;
+    grid-column: 1;
   }
 
   .representative-buttons {
     grid-row: 3;
+    grid-column: 1;
+    justify-self: start;
+    margin: 0;
   }
 
   .drop-down-menu {
-    grid-row: 4;
+    grid-row: 3;
+    grid-column: 1;
+    font-size: 0.7rem;
   }
 
   .small-screen-drop-down {
-    font-size: 1rem;
+    height: 1rem;
+  }
+
+  .drop-down-ul {
+    visibility: hidden;
   }
 
   .graphics-area {
     grid-row: 4;
+    grid-column: 1;
     grid-template-columns: 1fr;
   }
 
   .job-container {
     grid-row: 5;
+    grid-column: 1;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
   }
@@ -922,6 +945,10 @@ textarea {
   .social-media {
     grid-column: 1;
     grid-row: 2;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
   }
 
   .alt-job-connections {
