@@ -884,6 +884,7 @@ textarea {
     grid-template-columns: 1fr;
     display: grid;
     grid-template-rows: 4rem auto auto auto auto;
+    width: 100%;
   }
 
   .navigation { 
@@ -931,6 +932,10 @@ textarea {
   .small-screen-drop-down {
     grid-column: 1;
     height: 1rem;
+  }
+
+  .open-search-section {
+    font-size:0. 75rem; 
   }
 
   .drop-down-ul {
