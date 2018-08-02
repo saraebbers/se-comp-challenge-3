@@ -788,9 +788,21 @@ textarea {
     grid-template-columns: 100px auto;
     display: grid;
     grid-template-rows: 4rem auto auto auto auto;
+    width: 100%;
   }
 
   .navigation { 
+    grid-column: 1;
+    grid-row: 1/6; 
+    display: grid;
+    grid-template-rows: 4rem auto auto auto 800px;
+  }
+
+  .user-info {
+    visibility: collapse;
+  }
+
+  a.nav-block {
     visibility: collapse;
   }
 
@@ -827,19 +839,19 @@ textarea {
 
   .drop-down-menu {
     grid-row: 3;
-    grid-column: 1;
+    grid-column: 2;
     font-size: 0.7rem;
   }
 
   .graphics-area {
     grid-row: 4;
-    grid-column: 1;
+    grid-column: 2;
     grid-template-columns: 1fr;
   }
 
   .job-container {
     grid-row: 5;
-    grid-column: 1;
+    grid-column: 2;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
   }
@@ -917,6 +929,7 @@ textarea {
   }
 
   .small-screen-drop-down {
+    grid-column: 1;
     height: 1rem;
   }
 
